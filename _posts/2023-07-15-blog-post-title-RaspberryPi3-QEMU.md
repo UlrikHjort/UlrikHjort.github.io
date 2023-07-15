@@ -73,7 +73,7 @@ echo 'raspberry' | openssl passwd -6 -stdin >> userconf
 sudo cp userconf /mnt/
 ```
 
-####Enable ssh:
+#### Enable ssh:
 
 Create an empty file "ssh" in the image:
 
