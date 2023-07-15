@@ -114,3 +114,5 @@ And copy files with:
 ```
 scp -P 2222 <FILE> pi@localhost:/home/pi/                                           
 ```
+#### Remember:
+Remember to expand the filesystem (use raspi-config) to get above 1.5G disk 
