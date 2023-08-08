@@ -59,7 +59,7 @@ offset=8192 * sector size = 8192*512 = 4194304
 #### Mount the kernel partition:                                                                                                          
                                                                                 
 ```
-mount -o loop,offset=4194304 2022-04-04-raspios-bullseye-arm64-lite.img boot                                                    
+sudo mount -o loop,offset=4194304 ./2023-05-03-raspios-bullseye-arm64-lite.img /mnt/                                                  
 ```
 
 
