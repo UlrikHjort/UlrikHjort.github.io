@@ -88,13 +88,9 @@ sudo touch /mnt/ssh
 qemu-system-aarch64 -m 1024 -M raspi3b -kernel /mnt/kernel8.img \
 
                     -dtb /mnt/bcm2710-rpi-3-b-plus.dtb \
-                    
-                    -sd ../A53/2023-05-03-raspios-bullseye-arm64-lite.img \
-                    
+                    -sd ./2023-05-03-raspios-bullseye-arm64-lite.img \
                     -append "console=ttyAMA0 root=/dev/mmcblk0p2 rw rootwait rootfstype=ext4" \
-                    
                     -nographic -device usb-net,netdev=net0 \
-                    
                     -netdev user,id=net0,hostfwd=tcp::2222-:22
                     
 ```
